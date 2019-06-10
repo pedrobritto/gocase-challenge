@@ -1,0 +1,57 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title Exia
+
+    // Favicons
+    link(rel='icon' type='image/png' href='assets/ico/favicon-32x32.png' sizes='32x32')
+    link(rel='icon' type='image/png' href='assets/ico/favicon-16x16.png' sizes='16x16')
+
+    // Misc
+    meta(name='theme-color' content='#36a3f7')
+
+    // Removes iOS format detection
+    meta(name='format-detection' content='telephone=no')
+    meta(name='format-detection' content='date=no')
+    meta(name='format-detection' content='address=no')
+    meta(name='format-detection' content='email=no')
+
+    // Fonts
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous')
+
+    // Stylesheets
+    link(rel='stylesheet' href='./assets/css/app.min.css')
+
+header.main-header-bundle
+    .main-header.js-get-main-header-height
+        .container
+            h1.main-header__logo-container
+                span.hide-text Exia
+                a(href='/')
+
+            .main-header__content
+                .header-info
+                    a.button.outline.primary.small(href='#') Botão
+                    .social-listing-header
+                        a.social-listing__item(href='#')
+                            i.fab.fa-fw.fa-facebook-f
+                        a.social-listing__item(href='#')
+                            i.fab.fa-fw.fa-instagram
+                        a.social-listing__item(href='#')
+                            i.fab.fa-fw.fa-twitter
+
+                .main-menu
+                    ul.main-menu__list.list-style-remove
+                        li.main-menu__item.menu-item
+                            a.main-menu__link(href='#')
+
+            .main-header__mobile-controls
+                a.button.outline.primary.small(href='#') Botão
+                .margin-horizontal--smaller
+                .burger-icon-container.js-main-menu-mobile-toggle
+                    .burger-icon.primary
+
+.clearance.--main-header

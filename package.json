@@ -6,7 +6,7 @@
     "scripts": {
         "gulp:serve": "gulp serve",
         "clean": "rimraf ./dist",
-        "pug": "pug src/template --out dist/ --pretty --watch",
+        "pug": "pug src/template --out dist/ --pretty --watch --silent",
         "start": "run-p webpack:watch gulp:serve pug",
         "build:dev": "yarn clean && run-p gulp:build:dev webpack pug",
         "build:prod": "yarn clean && run-p gulp:build:prod webpack:prod pug",

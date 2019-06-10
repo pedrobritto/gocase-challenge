@@ -260,13 +260,13 @@ gulp.task("build:prod", gulp.series("copy:sass:prod", "copy:assets", done => don
  */
 
 // PHP Server
-gulp.task("php-server", () => {
-    php.server({
-        base: path.resolve(PATH.dist),
-        port: 4010,
-        stdio: "ignore",
-    });
-});
+// gulp.task("php-server", () => {
+//     php.server({
+//         base: path.resolve(PATH.dist),
+//         port: 4010,
+//         stdio: "ignore",
+//     });
+// });
 
 // BrowserSync Server
 gulp.task("browser-sync", () => {
@@ -279,13 +279,12 @@ gulp.task("browser-sync", () => {
     // });
 
     browserSync.init({
-        server: {
-            baseDir: "./dist",
-        },
+        server: "./dist",
         injectChanges: true,
         open: false,
         notify: false,
         port: 4000,
+        watch: true,
     });
 });
 
@@ -293,6 +292,14 @@ gulp.task("browser-sync", () => {
  * 2.5.1 Tarefas Watch
  */
 gulp.task("file-watcher", () => {
+    gulp.watch(
+        `${PATH.src}/template/**/*`,
+        gulp.series(done => {
+            console.log("WORK, DAMMIT!");
+            browserSync.reload();
+            done();
+        })
+    );
     gulp.watch(`${PATH.src}/js/**/*`, gulp.series("watch:js"));
     gulp.watch(`${PATH.src}/sass/**/*`, gulp.series("copy:sass:dev"));
     gulp.watch(`${PATH.src}/images/**/*`, gulp.series("watch:images"));
@@ -315,6 +322,11 @@ gulp.task("file-watcher", () => {
     // }
 
     // phpWatcher.on("change", updatePhp);
+});
+
+gulp.task("watch:pug", done => {
+    browserSync.reload();
+    done();
 });
 
 gulp.task("watch:js", done => {

@@ -1,7 +1,7 @@
 import burger from "./modules/burger";
 import FixedElementClearance from "./modules/FixedElementClearance";
 import LazyLoad from "vanilla-lazyload";
-import MenuToggle from "./modules/MenuToggle";
+// import MenuToggle from "./modules/MenuToggle";
 import SmoothScroll from "smooth-scroll/dist/smooth-scroll";
 
 export default () => {
@@ -21,11 +21,11 @@ export default () => {
         CSSVariableName: "main-header-height",
     });
 
-    new MenuToggle({
-        menuToggle: [".js-main-menu-mobile-toggle"],
-        menuElement: ".main-menu-mobile",
-        menuClose: [".js-close-menu-mobile"],
-        activeBodyClass: "mobile-menu-is-open",
-        breakpointToHide: 1200,
-    });
+    // new MenuToggle({
+    //     menuToggle: [".js-main-menu-mobile-toggle"],
+    //     menuElement: ".main-menu-mobile",
+    //     menuClose: [".js-close-menu-mobile"],
+    //     activeBodyClass: "mobile-menu-is-open",
+    //     breakpointToHide: 1200,
+    // });
 };

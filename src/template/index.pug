@@ -2,8 +2,157 @@ include header
 
 .page-wrapper.content-wrapper
     .container.padding-vertical
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit illo, consequuntur minima culpa ea.
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit illo, consequuntur minima culpa ea.
-        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit illo, consequuntur minima culpa ea.
+        .product-page__prod-row
+
+        img(src="https://s3.amazonaws.com/static-factory.gocase.com.br/mockups/image/3/iphone6/product_standard-iphone6-poeira-das-estrelas-manuscrita-pt_BR.jpg", alt="")
+
+        .product-info
+            h2.product-info__title
+                | Capinha para celular Poeira das estrelas Manuscrita
+
+            .product-info__price-container
+                .product-info__price-old R$ 89,90
+                .product-info__price-new R$ 79,90
+
+            .product-info__timer-container
+                .progress-bar
+                    .progress-bar__bg
+                    .progress-bar__track(style="width: 75%")
+
+                .product-timer__text-container
+                    .product-timer__text 75% vendidos
+                    .product-timer__text Termina em
+                        span 03:59:59
+
+            .rating
+                .rating__star
+                    i.fas.fa-star
+                .rating__star
+                    i.fas.fa-star
+                .rating__star
+                    i.fas.fa-star
+                .rating__star
+                    i.fas.fa-star
+                .rating__star
+                    i.fas.fa-star-half-alt
+
+                .rating__text
+                    | 752 opiniões
+
+        .margin-top--bigger
+        .separator-title.small.uppercase
+            .separator-title__text MODELO DA CAPINHA
+
+
+        .case-type
+            .case-type__item
+                a(href="#").case-type__link-container
+                    .case-type__image-container
+                        img.image.block(src="https://static-production.gocase.com.br/case_types/1/original/icon_standard-2.jpg?1559029949", alt="")
+
+                    .case-type__text
+                        .case-type__label
+                            | Transparente
+
+                button.button.clean.case-type__info
+                    i.far.fa-question-circle
+
+            .case-type__item
+                a(href="#").case-type__link-container
+                    .case-type__image-container
+                        img.image.block(src="https://static-production.gocase.com.br/case_types/1/original/icon_standard-2.jpg?1559029949", alt="")
+
+                    .case-type__text
+                        .case-type__label
+                            | Anti-impacto PRO
+                        .case-type__price
+                            | R$ 119,90
+
+                button.button.clean.case-type__info
+                    i.far.fa-question-circle
+
+            .case-type__item
+                a(href="#").case-type__link-container
+                    .case-type__image-container
+                        img.image.block(src="https://static-production.gocase.com.br/case_types/1/original/icon_standard-2.jpg?1559029949", alt="")
+
+                    .case-type__text
+                        .case-type__label
+                            | Glitter Silver
+                        .case-type__price
+                            | R$ 79,90
+
+                button.button.clean.case-type__info
+                    i.far.fa-question-circle
+
+            .case-type__item
+                a(href="#").case-type__link-container
+                    .case-type__image-container
+                        img.image.block(src="https://static-production.gocase.com.br/case_types/1/original/icon_standard-2.jpg?1559029949", alt="")
+
+                    .case-type__text
+                        .case-type__label
+                            | Glitter Gold
+                        .case-type__price
+                            | R$ 89,90
+
+                button.button.clean.case-type__info
+                    i.far.fa-question-circle
+
+        .margin-top--bigger
+        .separator-title.small.uppercase
+            .separator-title__text CUSTOMIZE SEU PRODUTO
+
+        .product-customize
+            .form-group
+                label.label Nome*
+                input.form-control(type="text")
+
+            .form-group
+                label.label Cor do nome*
+
+                .color-select
+                    .color-select__item(style="background-color: #fff")
+                    .color-select__item(style="background-color: #37b5f9")
+                    .color-select__item(style="background-color: #d93dd2")
+
+        .margin-top
+            button.button.dark.block.button-add-to-cart
+                i.fas.fa-shopping-cart
+                | Adicionar ao carrinho
+
+        .margin-top--bigger
+        .separator-title.small.uppercase
+            .separator-title__text DESCRIÇÃO
+
+        p.s1
+            | As capinhas para celular da Gocase deixam o seu smartphone a sua cara.
+            | São mais de 1000 estampas exclusivas, produzidas com alta qualidade de
+            | impressão, garantindo cores vivas e completa aderência. As capas são de
+            | TPU maleável (silicone maleável), protegendo o seu smartphone contra impactos,
+            | arranhões e sujeira ocasionados no cotidiano.
+
+        .margin-top--bigger
+        .separator-title.small.uppercase
+            .separator-title__text PRAZO DE POSTAGEM
+
+        p.s1
+            | Após a confirmação de pagamento precisamos de até 5 dias úteis para
+            | a produção e postagem do seu pedido. Após a postagem se inicia a
+            | contagem do prazo do frete para a sua localidade.
+
+        .margin-top--bigger
+        .separator-title.small.uppercase
+            .separator-title__text COMPARTILHE
+
+        .social-share
+            a(href="#").social-share__item
+                i.fab.fa-fw.fa-facebook-f
+            a(href="#").social-share__item
+                i.fab.fa-fw.fa-twitter
+            a(href="#").social-share__item
+                i.fab.fa-fw.fa-pinterest
+            a(href="#").social-share__item
+                i.fab.fa-fw.fa-whatsapp
 
 include footer

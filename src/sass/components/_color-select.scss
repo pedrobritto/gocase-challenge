@@ -1,0 +1,19 @@
+.color-select {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-select__item {
+    background-color: get-color(primary);
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 3px solid #ddd;
+    border-radius: 0.3rem;
+    margin: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        border-color: #555;
+    }
+}

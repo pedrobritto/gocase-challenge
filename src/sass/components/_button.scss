@@ -103,10 +103,12 @@ $button-transition: $transition-timing-default;
 // ===========
 .button {
     @include button-base();
+}
 
-    &.clean {
-        padding: 0;
-    }
+.button.clean {
+    background-color: transparent;
+    border: 0;
+    appearance: none;
 }
 
 // ==============

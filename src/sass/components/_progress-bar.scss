@@ -9,7 +9,7 @@
 }
 
 .progress-bar__track {
-    background-color: get-color(primary-lighter);
+    background-color: rgba(get-color(primary), 0.4);
     height: 0.6rem;
     border-radius: 0.3rem;
 

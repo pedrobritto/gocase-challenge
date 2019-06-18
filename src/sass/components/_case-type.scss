@@ -1,17 +1,33 @@
 .case-type {
-    @include media(400px) {
+    @include media(550px) {
         display: flex;
         flex-wrap: wrap;
     }
 
+    @include media-range(550px, 750px) {
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    @include media(1200px) {
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
     .case-type__item {
         margin-bottom: 1.5rem;
-        max-width: 26rem;
         width: 100%;
 
-        @include media(400px) {
-            // width: calc(100% / 2);
-            margin-right: 1.5rem;
+        @include media-range(550px, 750px) {
+            width: calc(50% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+        }
+
+        @include media(1200px) {
+            width: calc(50% - 1.5rem);
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
         }
     }
 }

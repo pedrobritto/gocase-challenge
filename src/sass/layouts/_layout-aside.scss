@@ -21,18 +21,6 @@
     }
 }
 
-.layout-aside {
-    @include layout-aside(get-bp(desktop), 50rem);
-}
-
-.layout-aside-sm {
-    @include layout-aside(get-bp(desktop), 35rem);
-}
-
-.layout-aside-md {
-    @include layout-aside(get-bp(desktop), 45rem);
-}
-
-.layout-aside-lg {
-    @include layout-aside(get-bp(desktop), 55rem);
-}
+// .layout-aside {
+//     @include layout-aside(get-bp(desktop), 50rem);
+// }

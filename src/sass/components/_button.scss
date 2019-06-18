@@ -121,6 +121,10 @@ $button-transition: $transition-timing-default;
 
     &.dark {
         @include button-solid($background-color: get-color(dark), $color: get-color(light));
+
+        &:hover {
+            background-color: #000;
+        }
     }
 
     &.primary {

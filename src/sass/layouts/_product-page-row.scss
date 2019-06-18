@@ -1,0 +1,17 @@
+.product-page-row {
+    @include media(750px) {
+        display: flex;
+    }
+}
+
+.product-page-col {
+    @include media(750px) {
+        width: 50%;
+    }
+
+    &:first-of-type {
+        @include media(750px, max) {
+            margin-bottom: 4rem;
+        }
+    }
+}

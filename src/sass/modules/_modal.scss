@@ -52,10 +52,20 @@ $modal-body-font-size: $font-size;
     padding: $modal-padding;
     overflow: auto;
     transition: $modal-transition;
+
+    &.small {
+        .modal__box {
+            max-width: 45rem;
+        }
+    }
 }
 
 .modal.is-visible {
     @include fade("show");
+
+    .modal__box {
+        transform: translateY(0);
+    }
 }
 
 .modal__bg {
@@ -77,6 +87,9 @@ $modal-body-font-size: $font-size;
     width: 100%;
     margin: auto;
     overflow: hidden;
+
+    transform: translateY(-2rem);
+    transition: 0.2s;
 }
 
 .modal__header {

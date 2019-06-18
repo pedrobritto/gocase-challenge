@@ -4,4 +4,6 @@ Swiper.use([Navigation, Pagination]);
 
 export default () => {
     // Instâncias do Swiper aqui...
+
+    new Swiper(".swiper-container");
 };

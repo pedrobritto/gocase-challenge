@@ -2,21 +2,23 @@ import burger from "./modules/burger";
 import FixedElementClearance from "./modules/FixedElementClearance";
 import LazyLoad from "vanilla-lazyload";
 // import MenuToggle from "./modules/MenuToggle";
-import SmoothScroll from "smooth-scroll/dist/smooth-scroll";
+// import SmoothScroll from "smooth-scroll/dist/smooth-scroll";
 
 import Modal from "./modules/ExiaModal";
+import slides from "./modules/slides";
 
 export default () => {
     burger();
+    slides();
 
     new LazyLoad({ elements_selector: ".lazy" });
 
-    new SmoothScroll('a[href*="#"]', {
-        header: ".main-header-bundle",
-        speed: 1500,
-        speedAsDuration: true,
-        easing: "easeOutQuint",
-    });
+    // new SmoothScroll('a[href*="#"]', {
+    //     header: ".main-header-bundle",
+    //     speed: 1500,
+    //     speedAsDuration: true,
+    //     easing: "easeOutQuint",
+    // });
 
     new FixedElementClearance({
         element: ".js-get-main-header-height",

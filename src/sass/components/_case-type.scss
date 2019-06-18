@@ -50,10 +50,11 @@
     line-height: 1;
 }
 
-// .case-type__label {}
+.case-type__label {
+    font-weight: bold;
+}
 
 .case-type__price {
-    font-weight: bold;
     margin-top: 0.3rem;
 }
 

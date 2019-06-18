@@ -295,7 +295,6 @@ gulp.task("file-watcher", () => {
     gulp.watch(
         `${PATH.src}/template/**/*`,
         gulp.series(done => {
-            console.log("WORK, DAMMIT!");
             browserSync.reload();
             done();
         })

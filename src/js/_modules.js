@@ -4,6 +4,8 @@ import LazyLoad from "vanilla-lazyload";
 // import MenuToggle from "./modules/MenuToggle";
 import SmoothScroll from "smooth-scroll/dist/smooth-scroll";
 
+import Modal from "./modules/ExiaModal";
+
 export default () => {
     burger();
 
@@ -28,4 +30,6 @@ export default () => {
     //     activeBodyClass: "mobile-menu-is-open",
     //     breakpointToHide: 1200,
     // });
+
+    new Modal();
 };

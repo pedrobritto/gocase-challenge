@@ -54,7 +54,7 @@ include header
                         .case-type__label
                             | Transparente
 
-                button.button.clean.case-type__info
+                button.button.clean.case-type__info(data-modal-open="modal-capinha-1")
                     i.far.fa-question-circle
 
             .case-type__item
@@ -68,7 +68,7 @@ include header
                         .case-type__price
                             | R$ 119,90
 
-                button.button.clean.case-type__info
+                button.button.clean.case-type__info(data-modal-open="modal-capinha-2")
                     i.far.fa-question-circle
 
             .case-type__item
@@ -82,7 +82,7 @@ include header
                         .case-type__price
                             | R$ 79,90
 
-                button.button.clean.case-type__info
+                button.button.clean.case-type__info(data-modal-open="modal-capinha-2")
                     i.far.fa-question-circle
 
             .case-type__item
@@ -96,7 +96,7 @@ include header
                         .case-type__price
                             | R$ 89,90
 
-                button.button.clean.case-type__info
+                button.button.clean.case-type__info(data-modal-open="modal-capinha-2")
                     i.far.fa-question-circle
 
         .margin-top--bigger
@@ -115,6 +115,20 @@ include header
                     .color-select__item(style="background-color: #fff")
                     .color-select__item(style="background-color: #37b5f9")
                     .color-select__item(style="background-color: #d93dd2")
+
+            .margin-top--big.margin-bottom
+                .form-group
+                    .checkbox-group
+                        input(type="checkbox" name="extras" id="extras-1")
+                        label.label(for="extras-1") ADICIONAR &nbsp;
+                            a.link-inline(href="") PELÍCULA ANTI-IMPACTO
+                            span.price-inline &nbsp;(R$ 54,90)
+
+                    .checkbox-group
+                        input(type="checkbox" name="extras" id="extras-2")
+                        label.label(for="extras-2") ADICIONAR &nbsp;
+                            a.link-inline(href="") GOGRIP - CLEAR
+                            span.price-inline &nbsp;(R$ 54,90)
 
         .margin-top
             button.button.dark.block.button-add-to-cart
@@ -154,5 +168,34 @@ include header
                 i.fab.fa-fw.fa-pinterest
             a(href="#").social-share__item
                 i.fab.fa-fw.fa-whatsapp
+
+.modal(data-modal='modal-capinha-1')
+    .modal__bg.js-modal-close
+    .modal__box
+        .modal__header
+            .modal__close.js-modal-close
+                i.far.fa-times-circle
+        .modal__body
+            .modal__content.ta-c
+                h5 Capinha transparente
+                p.s1
+                    | A capinha transparente é feita de eius facere, quia
+                    | neque delectus architecto expedita optio at maiores odit minus explicabo dolor.
+                    | Earum, dolore. Consequuntur laboriosam mollitia officia ad qui.
+
+.modal(data-modal='modal-capinha-2')
+    .modal__bg.js-modal-close
+    .modal__box
+        .modal__header
+            .modal__close.js-modal-close
+                i.far.fa-times-circle
+        .modal__body
+            .modal__content.ta-c
+                h5 Capinha Anti-impacto PRO
+                p.s1
+                    | A capinha Anti-impacto PRO é feita de eius facere, quia
+                    | neque delectus architecto expedita optio at maiores odit minus explicabo dolor.
+                    | Earum, dolore. Consequuntur laboriosam mollitia officia ad qui.
+
 
 include footer

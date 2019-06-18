@@ -84,31 +84,27 @@ $modal-body-font-size: $font-size;
     justify-content: space-between;
     align-items: center;
     background-color: $modal-header-background-color;
-    padding: $modal-header-padding;
+    padding: 1.5rem 1.5rem 0.5rem;
     font-size: $modal-header-font-size;
     line-height: 1.2;
     color: $modal-header-color;
     fill: $modal-header-color;
-
-    @if $modal-header-has-separator {
-        border-bottom: 0.1rem solid $modal-header-separator-color;
-    }
 }
 
 .modal__close {
-    width: 2.5rem;
-    margin-left: 2rem;
+    margin: auto;
     cursor: pointer;
 
-    svg {
-        vertical-align: middle;
+    i {
+        font-size: 3rem;
+        color: get-color(primary-dark);
     }
 }
 
 .modal__body {
     background-color: $modal-body-background-color;
     color: $modal-body-color;
-    padding: $modal-body-padding;
+    padding: 1rem 2rem 2rem;
     font-size: $modal-body-font-size;
     overflow: auto;
 }

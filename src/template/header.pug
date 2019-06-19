@@ -25,7 +25,7 @@ head
     // Stylesheets
     link(rel='stylesheet' href='./assets/css/app.min.css')
 
-header.main-header-wrapper
+header.main-header-wrapper.js-get-main-header-wrapper-height
     .main-header.js-get-main-header-height
         .container
             .main-header__mobile-controls
@@ -35,26 +35,44 @@ header.main-header-wrapper
             a(href='/').main-header__logo-container
                 img.main-header__logo(src="https://static-production.gocase.com.br/assets/header/logo-gocase-d793f8108585b4b8a6d1039cf75f66f1eb5af0d825277ff09cf9afad49a04da0.png", alt="")
 
-            .main-header__content
-                .header-info
-                    .social-listing-header
-                        a.social-listing__item(href='#')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.social-listing__item(href='#')
-                            i.fab.fa-fw.fa-instagram
-                        a.social-listing__item(href='#')
-                            i.fab.fa-fw.fa-twitter
+            .main-header__search-container.hide-desktop-below
+                .input-icon.right
+                    input#form-icon-search.form-control.small(type='search' placeholder='Busque por temas, artes e produtos')
+                    .input-icon__icon-container
+                        .input-icon__icon
+                            button.button.clean
+                                i.fas.fa-search
 
-                .main-menu
-                    ul.main-menu__list.list-style-remove
-                        li.main-menu__item.menu-item
-                            a.main-menu__link(href='#')
+            .hide-desktop-below(style="margin-left: auto")
+                i.fas.fa-shopping-cart
+
+            .hide-desktop-below
+                .margin-left--small
+                    a(href="#").s2 ENTRAR
 
             .main-header__mobile-controls(style="margin-left: auto")
                 i.fas.fa-search
                 .margin-left
                 i.fas.fa-shopping-cart
 
+    .main-menu
+        .container
+            ul.main-menu__list.list-style-remove
+                li.main-menu__item.menu-item
+                    a.main-menu__link(href='#') Item do menu
+                li.main-menu__item.menu-item
+                    a.main-menu__link(href='#') Item do menu
+                li.main-menu__item.menu-item
+                    a.main-menu__link(href='#') Item do menu
+                li.main-menu__item.menu-item
+                    a.main-menu__link(href='#') Item do menu
+                li.main-menu__item.menu-item
+                    a.main-menu__link(href='#') Item do menu
+                li.main-menu__item.menu-item
+                    a.main-menu__link(href='#') Item do menu
+                li.main-menu__item.menu-item
+                    a.main-menu__link(href='#') Item do menu
+
 include template-parts/main-menu-mobile
 
-.clearance.--main-header
+.clearance.--main-header-wrapper

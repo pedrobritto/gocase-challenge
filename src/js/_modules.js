@@ -13,8 +13,8 @@ export default () => {
     new LazyLoad({ elements_selector: ".lazy" });
 
     new FixedElementClearance({
-        element: ".js-get-main-header-height",
-        CSSVariableName: "main-header-height",
+        element: ".js-get-main-header-wrapper-height",
+        CSSVariableName: "main-header-wrapper-height",
     });
 
     new MenuToggle({

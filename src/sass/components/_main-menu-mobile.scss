@@ -4,7 +4,7 @@
 
 .main-menu-mobile {
     position: fixed;
-    top: var(--main-header-height);
+    top: var(--main-header-wrapper-height);
     left: 0;
     bottom: 0;
     z-index: z(menu);

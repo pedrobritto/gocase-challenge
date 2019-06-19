@@ -2,4 +2,8 @@
     &.--main-header {
         padding-top: var(--main-header-height);
     }
+
+    &.--main-header-wrapper {
+        padding-top: var(--main-header-wrapper-height);
+    }
 }

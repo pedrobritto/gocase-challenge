@@ -1,0 +1,8 @@
+.swiper-related-products {
+    &:hover {
+        .swiper-nav-container {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

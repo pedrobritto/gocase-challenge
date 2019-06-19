@@ -1,0 +1,44 @@
+.swiper-nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: 0.2s;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+
+    @include media(get-bp(desktop), max) {
+        display: none;
+    }
+}
+
+.swiper-nav-prev,
+.swiper-nav-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 0.3rem;
+    padding: 2rem 1rem;
+    appearance: none;
+
+    transition: 0.15s;
+
+    &.swiper-button-disabled {
+        opacity: 0;
+    }
+}
+
+.swiper-nav-prev {
+    left: 0;
+}
+
+.swiper-nav-next {
+    right: 0;
+}

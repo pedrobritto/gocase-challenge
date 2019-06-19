@@ -1,0 +1,29 @@
+.product-thumb {
+    display: block;
+    padding: 0 1rem;
+}
+
+// .product-thumb__image-container {}
+
+// .product-thumb__image {}
+
+.product-thumb__text {
+    text-align: center;
+    font-size: 1.4rem;
+    color: get-color(text-muted);
+}
+
+.product-thumb__name {
+    font-weight: bold;
+    margin-top: 1rem;
+    line-height: 1.3;
+
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.product-thumb__price {
+    margin-top: 0.5rem;
+}

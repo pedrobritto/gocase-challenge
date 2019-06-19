@@ -40,7 +40,6 @@ module.exports = {
                             [
                                 "@babel/preset-env",
                                 {
-                                    useBuiltIns: "usage",
                                     targets: "last 2 versions, > .25%, ie 11",
                                 },
                             ],

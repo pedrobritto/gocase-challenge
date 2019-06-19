@@ -1,13 +1,13 @@
-.main-header-bundle {
+.main-header-wrapper {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: z(menu);
+    z-index: z(menu) + 1;
 }
 
 .main-header {
-    padding: 1.4rem 0;
+    padding: 1.2rem 0;
     background-color: #fff;
     color: get-color(dark);
     box-shadow: 0 0.2rem 0.7rem rgba(#000, 0.1);
@@ -19,7 +19,6 @@
     > .container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 }
 

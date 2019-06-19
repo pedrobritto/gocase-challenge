@@ -7,18 +7,19 @@
     top: var(--main-header-height);
     left: 0;
     bottom: 0;
-    right: 0;
-    z-index: z(modal);
+    z-index: z(menu);
     background-color: #fff;
-    color: #fff;
+    color: #333;
     padding: 10%;
     overflow: auto;
     transform: translate3d(-100%, 0, 0);
-    background-color: get-color(primary-darker);
+    background-color: #fff;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    width: 25rem;
 
     transition: 0.3s;
 
@@ -33,16 +34,12 @@
 
     .main-menu-mobile__item,
     .menu-item {
-        color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-
         > a,
         .main-menu-mobile__link {
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 1.4rem;
             display: block;
-            padding: 1.5rem 0;
+            padding: 1rem 0;
         }
     }
 

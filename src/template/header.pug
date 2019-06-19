@@ -3,7 +3,7 @@ head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
-    title Exia
+    title Gocase
 
     // Favicons
     link(rel='icon' type='image/png' href='assets/ico/favicon-32x32.png' sizes='32x32')
@@ -25,16 +25,18 @@ head
     // Stylesheets
     link(rel='stylesheet' href='./assets/css/app.min.css')
 
-header.main-header-bundle
+header.main-header-wrapper
     .main-header.js-get-main-header-height
         .container
-            h1.main-header__logo-container
-                span.hide-text Exia
-                a(href='/')
+            .main-header__mobile-controls
+                .burger-icon-container.js-main-menu-mobile-toggle
+                    .burger-icon.primary
+
+            a(href='/').main-header__logo-container
+                img.main-header__logo(src="https://static-production.gocase.com.br/assets/header/logo-gocase-d793f8108585b4b8a6d1039cf75f66f1eb5af0d825277ff09cf9afad49a04da0.png", alt="")
 
             .main-header__content
                 .header-info
-                    a.button.outline.primary.small(href='#') Botão
                     .social-listing-header
                         a.social-listing__item(href='#')
                             i.fab.fa-fw.fa-facebook-f
@@ -48,10 +50,11 @@ header.main-header-bundle
                         li.main-menu__item.menu-item
                             a.main-menu__link(href='#')
 
-            .main-header__mobile-controls
-                a.button.outline.primary.small(href='#') Botão
-                .margin-horizontal--smaller
-                .burger-icon-container.js-main-menu-mobile-toggle
-                    .burger-icon.primary
+            .main-header__mobile-controls(style="margin-left: auto")
+                i.fas.fa-search
+                .margin-left
+                i.fas.fa-shopping-cart
+
+include template-parts/main-menu-mobile
 
 .clearance.--main-header

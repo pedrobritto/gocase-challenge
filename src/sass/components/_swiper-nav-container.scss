@@ -9,6 +9,7 @@
 
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     z-index: 1;
 
     @include media(get-bp(desktop), max) {
@@ -27,6 +28,7 @@
     border-radius: 0.3rem;
     padding: 2rem 1rem;
     appearance: none;
+    pointer-events: all;
 
     transition: 0.15s;
 
